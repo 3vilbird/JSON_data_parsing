@@ -5,7 +5,7 @@ const rec = (data, count) => {
     if (child.selected == 1) {
       console.log(pat.repeat([count]) + ">" + child.name);
       // base case
-      return rec(child.children, 10);
+      return rec(child.children, count+5);
     } else {
       // terminating case
       return;
